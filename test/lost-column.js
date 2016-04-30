@@ -8,7 +8,7 @@ describe('lost-column', function() {
       'a { lost-column: 1/3; }',
       'a { width: calc(99.99% * 1/3 - (30px - 30px * 1/3)); }\n' +
       'a:nth-child(1n) { float: left; margin-right: 30px; clear: none; }\n' +
-      'a:last-child { margin-right: 0; }\n' +
+      'a:last-of-type { margin-right: 0; }\n' +
       'a:nth-child(3n) { margin-right: 0; float: right; }\n' +
       'a:nth-child(3n + 1) { clear: left; }'
     );
@@ -19,7 +19,7 @@ describe('lost-column', function() {
       'a { lost-column: 2/5; }',
       'a { width: calc(99.99% * 2/5 - (30px - 30px * 2/5)); }\n' +
       'a:nth-child(1n) { float: left; margin-right: 30px; clear: none; }\n' +
-      'a:last-child { margin-right: 0; }\n' +
+      'a:last-of-type { margin-right: 0; }\n' +
       'a:nth-child(5n) { margin-right: 0; float: right; }\n' +
       'a:nth-child(5n + 1) { clear: left; }'
     );
@@ -30,7 +30,7 @@ describe('lost-column', function() {
       'a { lost-column: 2/4 2; }',
       'a { width: calc(99.99% * 2/4 - (30px - 30px * 2/4)); }\n' +
       'a:nth-child(1n) { float: left; margin-right: 30px; clear: none; }\n' +
-      'a:last-child { margin-right: 0; }\n' +
+      'a:last-of-type { margin-right: 0; }\n' +
       'a:nth-child(2n) { margin-right: 0; float: right; }\n' +
       'a:nth-child(2n + 1) { clear: left; }'
     );
@@ -41,7 +41,7 @@ describe('lost-column', function() {
       'a { lost-column: 2/5 3 0; }',
       'a { width: calc(99.999999% * 2/5); }\n' +
       'a:nth-child(1n) { float: left; margin-right: 0; clear: none; }\n' +
-      'a:last-child { margin-right: 0; }\n' +
+      'a:last-of-type { margin-right: 0; }\n' +
       'a:nth-child(3n) { margin-right: 0; float: right; }\n' +
       'a:nth-child(3n + 1) { clear: left; }'
     );
